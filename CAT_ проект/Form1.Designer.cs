@@ -39,6 +39,11 @@
             this.s_vami = new System.Windows.Forms.Label();
             this.corm = new System.Windows.Forms.Label();
             this.gladit = new System.Windows.Forms.Label();
+            this.glad = new System.Windows.Forms.TextBox();
+            this.korm = new System.Windows.Forms.TextBox();
+            this.v_min = new System.Windows.Forms.RadioButton();
+            this.v_dni = new System.Windows.Forms.RadioButton();
+            this.v_chas = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.info.SuspendLayout();
             this.go.SuspendLayout();
@@ -63,6 +68,9 @@
             // 
             // info
             // 
+            this.info.Controls.Add(this.v_chas);
+            this.info.Controls.Add(this.v_dni);
+            this.info.Controls.Add(this.v_min);
             this.info.Controls.Add(this.s_vami);
             this.info.Controls.Add(this.vosrast);
             this.info.Controls.Add(this.rodisa);
@@ -75,6 +83,8 @@
             // 
             // go
             // 
+            this.go.Controls.Add(this.glad);
+            this.go.Controls.Add(this.korm);
             this.go.Controls.Add(this.gladit);
             this.go.Controls.Add(this.corm);
             this.go.Location = new System.Drawing.Point(24, 329);
@@ -132,7 +142,7 @@
             // corm
             // 
             this.corm.AutoSize = true;
-            this.corm.Location = new System.Drawing.Point(53, 35);
+            this.corm.Location = new System.Drawing.Point(44, 42);
             this.corm.Name = "corm";
             this.corm.Size = new System.Drawing.Size(51, 13);
             this.corm.TabIndex = 3;
@@ -141,11 +151,60 @@
             // gladit
             // 
             this.gladit.AutoSize = true;
-            this.gladit.Location = new System.Drawing.Point(229, 35);
+            this.gladit.Location = new System.Drawing.Point(229, 42);
             this.gladit.Name = "gladit";
             this.gladit.Size = new System.Drawing.Size(48, 13);
             this.gladit.TabIndex = 4;
             this.gladit.Text = "Гладить";
+            // 
+            // glad
+            // 
+            this.glad.Location = new System.Drawing.Point(204, 19);
+            this.glad.Name = "glad";
+            this.glad.Size = new System.Drawing.Size(100, 20);
+            this.glad.TabIndex = 3;
+            this.glad.Text = "Глаженье раз в";
+            // 
+            // korm
+            // 
+            this.korm.Location = new System.Drawing.Point(13, 19);
+            this.korm.Name = "korm";
+            this.korm.Size = new System.Drawing.Size(100, 20);
+            this.korm.TabIndex = 4;
+            this.korm.Text = "кормление раз в";
+            // 
+            // v_min
+            // 
+            this.v_min.AutoSize = true;
+            this.v_min.Location = new System.Drawing.Point(204, 31);
+            this.v_min.Name = "v_min";
+            this.v_min.Size = new System.Drawing.Size(76, 17);
+            this.v_min.TabIndex = 3;
+            this.v_min.TabStop = true;
+            this.v_min.Text = "В минутах";
+            this.v_min.UseVisualStyleBackColor = true;
+            // 
+            // v_dni
+            // 
+            this.v_dni.AutoSize = true;
+            this.v_dni.Location = new System.Drawing.Point(204, 58);
+            this.v_dni.Name = "v_dni";
+            this.v_dni.Size = new System.Drawing.Size(58, 17);
+            this.v_dni.TabIndex = 4;
+            this.v_dni.TabStop = true;
+            this.v_dni.Text = "В днях";
+            this.v_dni.UseVisualStyleBackColor = true;
+            // 
+            // v_chas
+            // 
+            this.v_chas.AutoSize = true;
+            this.v_chas.Location = new System.Drawing.Point(204, 91);
+            this.v_chas.Name = "v_chas";
+            this.v_chas.Size = new System.Drawing.Size(63, 17);
+            this.v_chas.TabIndex = 5;
+            this.v_chas.TabStop = true;
+            this.v_chas.Text = "В часах";
+            this.v_chas.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -183,6 +242,11 @@
         private System.Windows.Forms.Label s_vami;
         private System.Windows.Forms.Label gladit;
         private System.Windows.Forms.Label corm;
+        private System.Windows.Forms.TextBox glad;
+        private System.Windows.Forms.TextBox korm;
+        private System.Windows.Forms.RadioButton v_chas;
+        private System.Windows.Forms.RadioButton v_dni;
+        private System.Windows.Forms.RadioButton v_min;
     }
 }
 
